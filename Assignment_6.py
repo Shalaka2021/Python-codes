@@ -1,16 +1,12 @@
-def ChkTyp(no):
-	if no<0:
-		print("Negative number");
-	elif no==0:
-		print("Zero");
-	else:
-		print("Positive number");
-
 def main():
+
 	print("Enter a number:");
 	no=int(input());
 
-	ChkTyp(no);
+	for i in range(no):
+		for j in range(0,no-i):
+			print("*",end="\t");
+		print("\n");
 
 if __name__=="__main__":
 	main();
