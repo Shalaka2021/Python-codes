@@ -1,16 +1,12 @@
-def DivBy5(no):
-	if no%5==0:
-		return True;
-	else:
-		return False;
-
 def main():
+
 	print("Enter a number:");
 	no=int(input());
 
-	boolval=DivBy5(no);
-
-	print(boolval);
+	for i in range(0,no):
+		for j in range(0,no):
+			print(j+1,end="\t");
+		print("\t");
 
 if __name__=="__main__":
 	main();
