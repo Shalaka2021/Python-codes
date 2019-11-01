@@ -1,14 +1,12 @@
-def ChkNum(n):
-	if n%2==0:
-		print("Even Number");
-	else:
-		print("Odd Number");
-
 def main():
-	print("Enter a number:");
-	n=int(input());
 
-	ChkNum(n);
+	print("Enter a number:");
+	no=int(input());
+
+	for i in range(no):
+		for j in range(no):
+			print("*",end="\t");
+		print("\n");
 
 if __name__=="__main__":
-	main()
+	main();
