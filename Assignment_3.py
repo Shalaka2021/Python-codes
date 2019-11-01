@@ -1,15 +1,18 @@
-def Add(no1,no2):
-	return no1+no2;
+def facto(no):
+	if no==1:
+		return 1;
+	return no*facto(no-1);
+
+
 
 def main():
-	print("Enter 1st number:");
-	no1=int(input());
-	print("Enter 2nd number:");
-	no2=int(input());
-	
-	ans=Add(no1,no2);
 
-	print("Result is:",ans);
+	print("Enter number to find factorial");
+	no=int(input());
+
+	ans=facto(no);
+
+	print("Factorial is ",ans);
 
 if __name__=="__main__":
 	main();
